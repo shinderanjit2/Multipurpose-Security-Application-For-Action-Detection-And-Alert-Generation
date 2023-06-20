@@ -7,7 +7,7 @@ import LogModule
 
 DirModule.Dir()
 
-net = cv2.dnn.readNet("mode4.weights", "mode4_testing.cfg")
+net = cv2.dnn.readNet("dnn_model/mode4.weights", "dnn_moddel/mode4_testing.cfg")
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_DEFAULT)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
 classes = ["Weapon"]
